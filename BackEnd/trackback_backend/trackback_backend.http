@@ -1,0 +1,6 @@
+@trackback_backend_HostAddress = http://localhost:5033
+
+GET {{trackback_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
