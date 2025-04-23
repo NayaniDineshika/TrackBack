@@ -1,0 +1,61 @@
+.IntroBody{
+    background:linear-gradient(135deg, #fffdfd, #f5f2f2);
+    height: 100vh; /* Full screen height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-family: Helvetica, sans-serif;
+}
+.highlight {
+    font-size:7rem;
+    font-weight: bold;
+    color: #ffaa00; /* Optional color change */
+  }
+.welcome{
+    color:#5cbe2d;
+}  
+  
+.ActionBody{
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#lost{
+    left: 0%;
+}
+#found{
+    right: 0%
+}
+.ButtonMainContainer{
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    top: 85%;
+}
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 200px;
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+.action-icon{
+    color: #ffaa00;
+    font-size: 80px !important;
+}
+
+.action-icon:hover{
+    color: #5cbe2d;
+}
