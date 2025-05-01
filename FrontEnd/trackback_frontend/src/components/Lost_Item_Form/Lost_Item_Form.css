@@ -1,0 +1,35 @@
+#lost-input{
+    width: 90%;
+    font-size:large;
+}
+.notofy-Input{
+    width: 60%;
+    height: 50px!important;
+    display: flex;
+    flex-direction: row ;
+    align-items: left;
+    justify-content: left;
+}
+
+.notify-CheckBox{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #12da33;    
+  }
+  
+  .notify-Label{
+    top: 3px;
+    position: relative;
+    font-size: 1rem; 
+    color: #9e1414 !important;
+    margin-left: 10px;
+  }
+  #lost-submit-button{
+    background-color: #ffaa00;
+    color: black;
+  }
+  #lost-submit-button:hover{
+    background-color: #5cbe2d;
+    color: white;
+  }

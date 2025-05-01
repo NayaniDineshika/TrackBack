@@ -43,7 +43,7 @@ namespace trackback_backend.Services
             return GenerateJwtToken(user);
         }
 
-        public string Login(LoginModel model)
+        public AuthResponse Login(LoginModel model)
         {
             var user = _context.Users.FirstOrDefault(u => u.Email == model.Email);
             if (user == null || !VerifyPassword(model.Password, user.PasswordHash))
@@ -51,8 +51,17 @@ namespace trackback_backend.Services
                 throw new Exception("Invalid credentials");
             }
 
-            return GenerateJwtToken(user);
+            // Generate the token
+            var token = GenerateJwtToken(user);
+
+            // Return token and user ID in the response
+            return new AuthResponse
+            {
+                Token = token,
+                UserId = user.Id.ToString()  // Ensure UserId is returned as a string
+            };
         }
+
 
         private string GenerateJwtToken(User user)
         {

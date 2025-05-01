@@ -34,14 +34,15 @@ namespace trackback_backend.Controllers
         {
             try
             {
-                var token = _authService.Login(model);
-                return Ok(new { Token = token });
+                var authResponse = _authService.Login(model);
+                return Ok(authResponse); // Return both the token and the user ID in the response
             }
             catch (Exception ex)
             {
                 return Unauthorized(new { message = ex.Message });
             }
         }
+
     }
 }
 

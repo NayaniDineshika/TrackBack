@@ -47,11 +47,6 @@
     padding: 20px 40px;
 
 }
-  input{
-    border-radius: 3px;
-    width: 60%;
-    height: 50px;
-  }
 .Register-Container{
     flex-direction: column;
     background-color: #cf2e87;

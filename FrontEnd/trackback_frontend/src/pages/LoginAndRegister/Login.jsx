@@ -25,7 +25,10 @@ const Login = () => {
 
       // If login is successful, store the token and navigate
       const token = response.data.token;
+      const userId = response.data.userId;
+      console.log('user' + userId);
       login(token); // Save the token in AuthContext and localStorage
+      localStorage.setItem('userId', userId); // save user id in local storage
 
       navigate('/actionPage'); // Redirect to home page after successful login
     } catch (error) {
